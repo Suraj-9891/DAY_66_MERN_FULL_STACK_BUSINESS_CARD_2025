@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+
+  header {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+
+  .form-container input,
+  .form-container select,
+  .form-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-container button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+  }
+
+  .form-container button:hover {
+    background-color: #555;
+  }
+
+  .preview-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+
+  .business-card {
+    width: 420px;
+    height: 270px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #007BFF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .business-card .name {
+    font-size: 2.3rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .business-card .job-title {
+    margin-top: 5px;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+  }
+
+  .business-card .contact-info {
+   margin-top: 5px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+   
+  }
+
+  .back-card {
+    display: none;
+    width: 420px;
+    height: 270px;
+    padding: 20px;
+    border-radius: 10px;
+    /* background-color: #1bd9c9; */
+    color: white;
+    text-align: center;
+    margin: auto;
+    background: linear-gradient(45deg, rgb(243, 81, 251), rgb(31, 236, 247));
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  }
+
+  footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0f1111;
+    
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+    }
+  }
+  #backCard{
+    font-family: 40px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+  }
+  #businessCard{
+    margin-top: 40px;
+  }
+  #back-Text{
+    font-family: 40px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+  }

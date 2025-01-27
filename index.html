@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Card Maker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    Business Card Maker
+  </header>
+
+  <div class="container">
+    <!-- Input Form -->
+    <div class="form-container">
+      <h2>Customize Your Card</h2>
+      <input type="text" id="name" placeholder="Name">
+      <input type="text" id="jobTitle" placeholder="Job Title">
+      <input type="text" id="companyName" placeholder="Company Name">
+      <input type="text" id="phone" placeholder="Phone Number">
+      <input type="email" id="email" placeholder="Email Address">
+      <input type="text" id="website" placeholder="Website URL">
+      <input type="text" id="address" placeholder="Address">
+
+      <label for="bgColor">Background Color</label>
+      <input type="color" id="bgColor">
+
+      <label for="gradient">Background Gradient</label>
+      <select id="gradient">
+        <option value="none">None</option>
+        <option value="linear-gradient(to right, #ff7e5f, #feb47b)">Warm Gradient</option>
+        <option value="linear-gradient(to right, #6a11cb, #2575fc)">Cool Gradient</option>
+        <option value="linear-gradient(to right, #11998e, #38ef7d)">Green Gradient</option>
+        <option value="linear-gradient(to right, #f7971e, #ffd200)">Sunny Gradient</option>
+        <option value="linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b)">Vivid Gradient</option>
+        <option value="linear-gradient(to right, #fc5c7d, #6a82fb)">Pink-Blue Gradient</option>
+        <option value="linear-gradient(to right, #ee0979, #ff6a00)">Red-Orange Gradient</option>
+        <option value="linear-gradient(to right, #00c6ff, #0072ff)">Blue Shades Gradient</option>
+        <option value="linear-gradient(to right, #8360c3, #2ebf91)">Purple-Green Gradient</option>
+        <option value="linear-gradient(to right, #ff9966, #ff5e62)">Coral Gradient</option>
+      </select>
+
+      <label for="textColor">Text Color</label>
+      <input type="color" id="textColor">
+
+      <label for="borderShadow">Card Border Shadow</label>
+      <select id="borderShadow">
+        <option value="none">None</option>
+        <option value="0 4px 8px rgba(0, 0, 0, 0.2)">Light Shadow</option>
+        <option value="0 8px 16px rgba(0, 0, 0, 0.4)">Medium Shadow</option>
+        <option value="0 12px 24px rgba(0, 0, 0, 0.6)">Heavy Shadow</option>
+      </select>
+
+      <label for="logo">Add Logo</label>
+      <input type="file" id="logo" accept="image/*">
+
+      <button onclick="toggleBackCard()">Toggle Back Page</button>
+      <button onclick="downloadCard()">Download Card</button>
+    </div>
+
+    <!-- Preview Area -->
+    <div class="preview-container">
+      <h2>Live Preview</h2>
+      <div id="businessCard" class="business-card">
+        <div class="name">👤Name</div>
+        <div class="job-title">💼Job title</div>
+        <div class="contact-info">
+          <p>🏢Company: ABC Corp</p>
+          <p>📞Phone: +1234567890</p>
+          <p>📧Email: john.doe@example.com</p>
+          <p>🌐Website: www.johndoe.com</p>
+          <p>📍Address: 1234 Elm St, City, State</p>
+        </div>
+        <div id="logoPreview"></div>
+      </div>
+      <div id="backCard" class="back-card">
+        <p id="back-Text">Thank You @2025 !</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Business Card Maker. Made with Suraj Kumar (STM)
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Include html2canvas Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>
